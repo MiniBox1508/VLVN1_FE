@@ -11,7 +11,8 @@ import {
   ArrowDown,
 } from "lucide-react";
 
-const API_BASE_URL = "https://vlvn1-be.onrender.com";
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "https://vlvn1-be.onrender.com";
 
 interface LeaderboardEntry {
   position: string;

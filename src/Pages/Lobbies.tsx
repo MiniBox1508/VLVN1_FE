@@ -3,7 +3,8 @@ import axios from "axios";
 import Layout from "../Layouts/Layout";
 import { Search, Users, ChevronLeft, ChevronRight, Hash } from "lucide-react";
 
-const API_BASE_URL = "https://vlvn1-be.onrender.com";
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "https://vlvn1-be.onrender.com";
 
 // --- INTERFACES ---
 interface LobbyMember {
